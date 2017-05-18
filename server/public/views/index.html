@@ -8,10 +8,11 @@
         <script type="text/javascript" src="/vendors/angular.min.js"></script>
         <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
         <script type="text/javascript" src="/assets/scripts/clientapp.js"></script>
+        <script src="assets/scripts/services/service.js" charset="utf-8"></script>
         <script type="text/javascript" src="/assets/scripts/controllers/login.controller.js"></script>
         <script type="text/javascript" src="/assets/scripts/controllers/user.controller.js"></script>
+        <script src="/assets/scripts/controllers/public.controller.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
-
         <!-- <base href="/" /> -->
     </head>
 
@@ -19,6 +20,11 @@
       <header ng-include="'/views/templates/header.html'"></header>
 
       <main ng-view></main>
-
+<div class="shelf" ng-controller='PublicController as pc'>
+    <div class = 'shelfItems' ng-repeat='item in pc.items'>
+      {{item.description}}
+      {{item.description}}
+    </div>
+</div>
     </body>
 </html>

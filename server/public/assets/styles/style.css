@@ -89,6 +89,8 @@ p{
 
 body{
   background-image: url('http://hdwplan.com/wp-content/uploads/2016/05/black-background-hd-image.jpeg');
+  background-attachment: fixed;
+
 }
 h7{
   color:white;
@@ -98,4 +100,9 @@ h7{
   text-shadow: 3px 3px 3px purple;
   color: white;
   font-size:100px !important;
+}
+.shelfItems{
+  color: white;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px pink;
 }

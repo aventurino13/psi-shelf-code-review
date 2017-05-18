@@ -1,4 +1,4 @@
-myApp.controller('UserController', ['$http', '$location', function($http, $location) {
+myApp.controller('UserController', ['$http', '$location', 'getService', function($http, $location, getService) {
   // This happens after view/controller loads -- not ideal but it works for now.
   var vm = this;
 
@@ -23,7 +23,7 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
     });
   } //end logout function
 
-  vm.addItem=function(){
+  vm.addItem = function(){
     console.log('in add items!');
     var itemToSend = {
       description: vm.description,
@@ -37,20 +37,9 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
       data: itemToSend
     }).then(function(res) {
       console.log('this is the res', res);
-
-      vm.getItems();
+      vm.getService.getItems();
     });
   }; //end addItem function
-  vm.getItems=function(){
-    $http({
-      method:'GET',
-      url:'/user/getItems'
-    }).then(function(res) {
-      console.log('this is the GET res', res.data);
-        vm.items = res.data;
-    });
-  }; //end getItems function
-
 
 
 }]);
