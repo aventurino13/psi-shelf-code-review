@@ -50,13 +50,11 @@ UserSchema.methods.comparePassword = function(candidatePassword, callback) {
     });
 };
 
-var userModel = mongoose.model('User', UserSchema);
+var User = mongoose.model('User', UserSchema);
 
 var itemModel = mongoose.model('items', itemsSchema);
 
 module.exports = {
-  userModel: userModel,
-  UserSchema: UserSchema,
-  itemModel: itemModel,
-  itemsSchema: itemsSchema
+  User: User,
+  itemModel: itemModel
 };

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var path = require('path');
+var itemModel = require('../models/user.model').itemModel;
 
 // Handles Ajax request for user information if user is authenticated
 router.get('/', function(req, res) {
@@ -27,20 +28,28 @@ router.get('/logout', function(req, res) {
   res.sendStatus(200);
 });
 
-router.post('/', function(req,res){
-  var newItem = new itemModel.items(req.body);
-  console.log('newItem ->', newItem);
+router.post('/AddItem', function(req,res){
+  console.log('newItem ->', req.body);
+  var newItem = new itemModel(req.body);
 
   newItem.save(function(err) {
-    console.log('This item sucks!!! errrrrrr');
     if(err){
       console.log(err);
       res.sendStatus(500);
+      console.log('Item bad!!! errrrrrr');
     }else{
       console.log('successful Item created');
       res.sendStatus(201);
     }
   });
+})
+
+router.get('/getItems', function(req, res){
+  console.log('in Router.GET', res);
+  itemModel.find().then(function(data){
+    console.log(data);
+    res.send(data);
+  })
 })
 
 

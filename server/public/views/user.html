@@ -15,8 +15,8 @@
 
 
 <input ng-model="uc.description" type="text" name="alias" value="" placeholder="item to add...">
-<input ng-model="uc.imgURL" type="text" name="alias" value="" placeholder="item to add...">
+<input ng-model="uc.imgURL" type="text" name="alias" value="" placeholder="add img url...">
 <button ng-click = "uc.addItem()" class = 'btn btn-success' type="button" name="button">Add Hero</button>
-<!-- <div ng-repeat="item in uc.newItem" class='itemsAdded' id="repeat">
-  {{item}}
-</div> -->
+<div ng-repeat="item in uc.items" class='itemsAdded' id="repeat">
+  {{item.description}} {{item.imgURL}}
+</div>
