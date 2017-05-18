@@ -1,3 +1,22 @@
+.lead{
+  text-align: center;
+  font-family: 'Creepster';
+  color:purple;
+  font-size: 90px !important;
+  text-shadow: 4px 4px 4px yellow;
+}
+
+
+#welcome{
+  color: teal;
+  text-shadow: 3px 3px 3px white;
+  font-family: 'Monoton';
+  font-size: 50px;
+}
+
+.instructions{
+  background-image: url('https://media1.giphy.com/media/X3s9GipvoMe1G/giphy.gif?response_id=591cb253cafb8efaeec88f91');
+}
 .instructions .container h1 {
     font-size: 24px;
     font-weight: 700;
@@ -6,6 +25,10 @@
 .instructions {
     background-color: #333333;
     color: #DDDDDD;
+}
+
+label{
+  color:white;
 }
 
 #entryForm {
@@ -38,4 +61,41 @@
 
 .btn-danger{
     margin-left: 10px;
+    width:150px;
+}
+
+.contains{
+    transition: all linear 5.0s;
+}
+
+.ng-hide {
+  height: 0;
+}
+
+.contain{
+  width: 600px;
+  height: 400px;
+  background-image: url('http://static.ziarelive.ro/images/stories/2015-01/179/primul-atac-al-hackerilor-anonymous-impotriva-jihadistilor-dupa-atacurile-din-franta.jpg');
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px black;
+}
+p{
+  font-family: 'Monoton';
+  font-size: 40px;
+  color: tomato;
+  text-shadow: 3px 3px 3px white;
+}
+
+body{
+  background-image: url('http://hdwplan.com/wp-content/uploads/2016/05/black-background-hd-image.jpeg');
+}
+h7{
+  color:white;
+}
+
+.itemsAdded{
+  text-shadow: 3px 3px 3px purple;
+  color: white;
+  font-size:100px !important;
 }

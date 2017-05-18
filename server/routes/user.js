@@ -27,5 +27,21 @@ router.get('/logout', function(req, res) {
   res.sendStatus(200);
 });
 
+router.post('/', function(req,res){
+  var newItem = new itemModel.items(req.body);
+  console.log('newItem ->', newItem);
+
+  newItem.save(function(err) {
+    console.log('This item sucks!!! errrrrrr');
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+      console.log('successful Item created');
+      res.sendStatus(201);
+    }
+  });
+})
+
 
 module.exports = router;

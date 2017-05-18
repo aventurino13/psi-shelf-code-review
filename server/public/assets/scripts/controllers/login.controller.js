@@ -22,7 +22,7 @@ myApp.controller('LoginController', ['$http', '$location', function($http, $loca
             $location.path('/user');
           } else {
             console.log('failure: ', response);
-            vm.message = "Wrong!!";
+            vm.message = "Please Try Again...";
           }
         });
       }
@@ -39,7 +39,7 @@ myApp.controller('LoginController', ['$http', '$location', function($http, $loca
         },
         function(response) {
           console.log('error');
-          vm.message = "Please try again."
+          vm.message = "Please try again..."
         });
       }
     }

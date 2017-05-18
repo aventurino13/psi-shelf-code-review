@@ -22,4 +22,21 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
       $location.path("/home");
     });
   }
+vm.addItem=function(){
+  console.log('in add items!');
+  var itemToSend = {
+    description: vm.description,
+    imgURL: vm.imgURL,
+    user: vm.userName
+  }
+console.log(itemToSend);
+}
+
+//   vm.newItem =[];
+// vm.addItem = function(item){
+//   console.log('item added:',vm.itemToAdd);
+//    vm.newItem.push(vm.itemToAdd)
+
+
+
 }]);
