@@ -3,15 +3,20 @@
   font-family: 'Creepster';
   color:#0eed54;
   font-size: 90px !important;
-  text-shadow: 4px 4px 4px yellow;
+  text-shadow: 5px 5px 5px pink;
 }
-
+h1{
+  color: white;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px pink;
+  text-align: center;
+}
 
 #welcome{
   color: blue;
   text-shadow: 3px 3px 3px white;
   font-family: 'Monoton';
-  font-size: 50px;
+  font-size: 40px !important;
 }
 
 .instructions{
@@ -75,7 +80,7 @@ label{
 
 .contain{
   width: 600px;
-  height: 400px;
+  height: 200px;
   background-image: url('http://static.ziarelive.ro/images/stories/2015-01/179/primul-atac-al-hackerilor-anonymous-impotriva-jihadistilor-dupa-atacurile-din-franta.jpg');
   text-align: center;
   margin: 0 auto;
