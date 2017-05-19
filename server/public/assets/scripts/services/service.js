@@ -11,4 +11,4 @@ myApp.service('getService',['$http', function($http){
         return res.data;
     });
   }; //end getItems function
-}]);
+}]); //end getService

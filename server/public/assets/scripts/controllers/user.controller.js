@@ -2,6 +2,8 @@ myApp.controller('UserController', ['$http', '$location', 'getService', function
   // This happens after view/controller loads -- not ideal but it works for now.
   var vm = this;
 
+  vm.shelf = getService.getItems();
+
   console.log('checking user');
 
   // Upon load, check this user's session on the server
@@ -37,7 +39,9 @@ myApp.controller('UserController', ['$http', '$location', 'getService', function
       data: itemToSend
     }).then(function(res) {
       console.log('this is the res', res);
-      vm.getService.getItems();
+      console.log(vm.shelf);
+      location.reload();
+      // getService.getItems();
     });
   }; //end addItem function
 

@@ -16,6 +16,7 @@
 
 .instructions{
   background-image: url('https://media1.giphy.com/media/X3s9GipvoMe1G/giphy.gif?response_id=591cb253cafb8efaeec88f91');
+  background-attachment: fixed;
 }
 .instructions .container h1 {
     font-size: 24px;
@@ -88,7 +89,7 @@ p{
 }
 
 body{
-  background-image: url('http://hdwplan.com/wp-content/uploads/2016/05/black-background-hd-image.jpeg');
+  background-image: url('bodyBackground.img');
   background-attachment: fixed;
 
 }
@@ -105,4 +106,7 @@ h7{
   color: white;
   font-size: 30px;
   text-shadow: 4px 4px 4px pink;
+}
+.instructions{
+  background-attachment: fixed;
 }
