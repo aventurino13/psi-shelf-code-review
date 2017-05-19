@@ -1,14 +1,14 @@
 .lead{
   text-align: center;
   font-family: 'Creepster';
-  color:purple;
+  color:#0eed54;
   font-size: 90px !important;
   text-shadow: 4px 4px 4px yellow;
 }
 
 
 #welcome{
-  color: teal;
+  color: blue;
   text-shadow: 3px 3px 3px white;
   font-family: 'Monoton';
   font-size: 50px;
@@ -82,9 +82,10 @@ label{
   box-shadow: 5px 5px 5px black;
 }
 p{
-  font-family: 'Monoton';
+  text-align: center;
+  font-family: 'Barrio';
   font-size: 40px;
-  color: tomato;
+  color: #0eed54;
   text-shadow: 3px 3px 3px white;
 }
 
@@ -106,7 +107,14 @@ h7{
   color: white;
   font-size: 30px;
   text-shadow: 4px 4px 4px pink;
+  text-align: center;
 }
 .instructions{
   background-attachment: fixed;
+}
+img{
+  display: block;
+    margin: auto;
+    width: 20%;
+  box-shadow: 5px 5px 5px green;
 }

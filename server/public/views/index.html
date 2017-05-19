@@ -22,9 +22,9 @@
       <main ng-view></main>
 <div class="shelf" ng-controller='PublicController as pc'>
     <div class = 'shelfItems' ng-repeat='item in pc.items'>
-      <p>{{item.user}} &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;posted:</p>
+      <p>{{item.user}} &nbsp;posted:</p>
       {{item.description}}
-      <img ng-src="{{item.imgURL}}" alt=""><br>
+      <img class='smallerPic' ng-src="{{item.imgURL}}" alt=""><br>
 
     </div>
 </div>
